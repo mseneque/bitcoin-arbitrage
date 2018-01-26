@@ -4,10 +4,12 @@ import time
 import logging
 import json
 from concurrent.futures import ThreadPoolExecutor, wait
-from arbitrage import public_markets
+# from arbitrage import public_markets
+
 from arbitrage import observers
 from arbitrage import config
 
+# import arbitrage.public_markets
 
 class Arbitrer(object):
     def __init__(self):

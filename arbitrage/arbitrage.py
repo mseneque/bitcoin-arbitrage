@@ -8,6 +8,7 @@ import os
 import inspect
 from arbitrage.arbitrer import Arbitrer
 from arbitrage import public_markets
+# import arbitrage.public_markets
 
 
 class ArbitrerCLI:

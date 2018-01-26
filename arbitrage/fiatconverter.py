@@ -16,9 +16,10 @@ class FiatConverter:
         self.__dict__ = self.__shared_state
         self.rates = {
             "USD": 1,
-            "EUR": 0.77,
-            "CNY": 6.15,
-            "SEK": 6.6,
+            "EUR": 0.81,
+            "CNY": 6.33,
+            "SEK": 7.93,
+            "AUD": 1.25,
         }
         self.update_delay = 60 * 60 # every hour
         self.last_update = 0
