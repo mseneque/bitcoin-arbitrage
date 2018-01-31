@@ -20,6 +20,7 @@ class FiatConverter:
             "CNY": 6.33,
             "SEK": 7.93,
             "AUD": 1.25,
+            "JPY": 109.37,
         }
         self.update_delay = 60 * 60 # every hour
         self.last_update = 0

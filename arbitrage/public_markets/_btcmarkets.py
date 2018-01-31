@@ -19,7 +19,7 @@ class BTCMarkets(Market):
         res = urllib.request.urlopen(req)
         depth = json.loads(res.read().decode('utf8'))
         self.depth = self.format_depth(depth)
-        print("btcmarkets => {}\n{}".format(self.code,self.depth))
+        # print("btcmarkets => {}\n{}".format(self.code,self.depth))
 
     def sort_and_format(self, l, reverse=False):
         l.sort(key=lambda x: float(x[0]), reverse=reverse)
