@@ -3,7 +3,7 @@ sys.path.append('../')
 import json
 import arbitrage
 import time
-from observers import observer
+from arbitrage.observers import observer
 
 
 class TestObserver(observer.Observer):
@@ -18,7 +18,7 @@ def main():
     testobs = TestObserver()
     arbitrer.observers = [testobs]
     arbitrer.arbitrage_opportunity("BitstampUSD", depths["BitstampUSD"]["asks"][0],
-                                   "MtGoxEUR", depths["MtGoxEUR"]["asks"][0])
+                                   "KrakenEUR", depths["KrakenEUR"]["asks"][0])
     # FIXME: add asserts
     elapsed = time.time() - start_time
     print("Time: %.3f" % elapsed)

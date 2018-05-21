@@ -8,12 +8,14 @@ Currently supported exchanges to get data:
  - Paymium (EUR)
  - BTC-e (USD, EUR)
  - Bitfinex (USD, EUR)
+ - bitFlyer (USD, EUR)
  - Kraken (USD, EUR)
  - OkCoin (CNY)
  - CampBX (USD)
  - Gemini (USD)
  - BTCC (CNY)
  - GDAX (USD, EUR)
+ - CEX.io (USD, EUR)
 
 Currently supported exchanges to automate trade:
  - Bitstamp (USD)
@@ -63,10 +65,13 @@ Run tests
 
 ## Alternative usage
 
-* List supported public markets:
-      $ python3 -m arbitrage list-public-markets
-* Help
-      $ python3 -m arbitrage -h
+List supported public markets:
+
+    $ python3 -m arbitrage list-public-markets
+
+Help:
+
+    $ python3 -m arbitrage -h
 
 # TODO
 
